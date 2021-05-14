@@ -11,7 +11,8 @@ from sklearn import model_selection
 import tushare as ts
 
 #get the stock data from tushare
-TOKEN = 'dfb6e9f4f9a3db86c59a3a0f680a9bdc46ed1b5adbf1e354c7faa761'   
+#use your own tushare token
+TOKEN = ''
 ts.set_token(TOKEN)
 pro = ts.pro_api()
 #get the daily price of stock 600309.SH
