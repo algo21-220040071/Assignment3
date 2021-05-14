@@ -14,6 +14,7 @@ TOKEN = ''
 ts.set_token(TOKEN)
 pro = ts.pro_api()
 #get the daily price of stock 600309.SH
+#daily = pd.read_excel('./data.xlsx')
 daily = pro.daily(ts_code = '600309.SH', start_date = '20190101',
                   end_date = '20210430', 
                   fields = 'trade_date,open,high,low,close')
